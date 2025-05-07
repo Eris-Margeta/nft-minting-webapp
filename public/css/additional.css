@@ -1,0 +1,74 @@
+.announcementBar {
+	font-family: var(--bfff);
+	background-color: red;
+	color: white;
+	padding: 4px 10px;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+}
+
+.announcementText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+}
+
+.countdownbar {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.countdownbar span {
+	margin: 5px 5px;
+}
+
+.announcementBar.shrink {
+	position: fixed;
+	height: 30px;
+	font-size: 0.85rem;
+	padding: 2px 5px;
+}
+
+#header {
+	display: block !important;
+}
+
+@media (max-width: 600px) {
+	.announcementBar {
+		font-size: 0.7rem;
+		padding: 2px 5px;
+	}
+
+	.announcementText {
+		flex-direction: row;
+		gap: 2px;
+	}
+
+	.countdownbar {
+		font-size: 0.85rem;
+	}
+}
+
+
+@media (max-width: 600px) {
+	.wf {
+		max-width: 100%;
+	}
+}
+
+.wf {
+	max-width: 100%;
+}
+
